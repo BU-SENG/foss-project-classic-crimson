@@ -38,7 +38,7 @@ You need to have all these installed for everything to work fine:
    - Navigate to the backend folder
    - Create a file named ".env"
    ```bash
-   DATABASE_URL="postgresql://postgres:{your password}@localhost:5432/moodboard"
+   DATABASE_URL="postgresql://postgres:{yourpassword}@localhost:5432/moodboard"
    JWT_SECRET="supersecretkey"
    PORT=5000
    ```
