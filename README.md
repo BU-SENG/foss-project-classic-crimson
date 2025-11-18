@@ -25,7 +25,7 @@ You need to have all these installed for everything to work fine:
 
 1. **Clone the project.** Open your terminal and use the following command:
    ```bash
-   git clone https://github.com/tireddev24/moodboard_411
+   (https://github.com/BU-SENG/foss-project-classic-crimson)
    ```
 
 2. **Open the "foss-project-classic-crimson" folder** in VS Code (or your preferred code editor)
