@@ -38,7 +38,7 @@ You need to have all these installed for everything to work fine:
    - Navigate to the backend folder
    - Create a file named ".env"
    ```bash
-   DATABASE_URL="postgresql://postgres:{11111112}@localhost:5432/moodboard"
+   DATABASE_URL="postgresql://postgres:{your password}@localhost:5432/moodboard"
    JWT_SECRET="supersecretkey"
    PORT=5000
    ```
@@ -73,7 +73,7 @@ You need to have all these installed for everything to work fine:
 ## PROJECT STRUCTURE 📁
 
 ```
-moodboard_411/
+foss-project-classic-crimson/
 ├── backend/          # Backend server files
 ├── my-app/           # Frontend application
 └── README.md         # Project documentation
