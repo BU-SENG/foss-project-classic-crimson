@@ -28,7 +28,7 @@ You need to have all these installed for everything to work fine:
    git clone https://github.com/tireddev24/moodboard_411
    ```
 
-2. **Open the "moodboard_411" folder** in VS Code (or your preferred code editor)
+2. **Open the "foss-project-classic-crimson" folder** in VS Code (or your preferred code editor)
 
 3. **Set up PostgreSQL database**
    - Create a new database in PostgreSQL
