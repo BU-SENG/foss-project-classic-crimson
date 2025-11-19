@@ -49,15 +49,6 @@ POST /api/auth/login — Login
 
 POST /api/auth/refresh-token -Get Refresh token
 
-**USERS**
-
-GET /api/users/getuser — Get Logged In User Details
-
-GET /api/users/getallusers — Get All Users
-
-GET /api/users/checkusername — Check UserName Availability
-
-
 **POSTS**
 POST /api/posts - Create a Post
 
