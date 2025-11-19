@@ -30,9 +30,9 @@ You need to have all these installed for everything to work fine:
 
 2. **Open the "foss-project-classic-crimson" folder** in VS Code (or your preferred code editor)
 
-3. **Set up PostgreSQL database**
-   - Create a new database in PostgreSQL
-   - Note your database connection details
+3. **Set up PostgreSQL database**.
+   - Create a new database in PostgreSQL.
+   - Note your database connection details.
 
 4. **Configure the backend:**
    - Navigate to the backend folder
