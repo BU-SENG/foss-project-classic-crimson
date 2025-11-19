@@ -38,24 +38,6 @@ Before you begin, ensure you have the following installed on your system:
 - **VSCode** (recommended) - [Download & Install VSCode](https://code.visualstudio.com/)
 - **PgAdmin** (optional, for database visualization) - [Download & Install PgAdmin](https://www.pgadmin.org/download/)
 
-### Database Setup
-
-1. **Install PostgreSQL** if you haven't already.
-
-2. **Create a new database:**
-   - Open PostgreSQL or PgAdmin
-   - Create a new database named `moodboard`
-   
-   ```sql
-   CREATE DATABASE moodboard;
-   ```
-
-3. **Note your database credentials:**
-   - Username (usually `postgres`)
-   - Password (set during PostgreSQL installation)
-   - Port (default is `5432`)
-   - Host (usually `localhost`)
-
 ### Backend Setup
 
 Follow these steps to set up the backend locally:
@@ -86,12 +68,12 @@ Follow these steps to set up the backend locally:
    PORT=5000
    ```
    
-   **Important:** Replace `{yourpassword}` with your actual PostgreSQL password.
+   **Important:** Replace `{yourpassword}` with your actual PostgreSQL password.The PostgreSQL port in the DATABASE_URL (default 5432) must match the port configured on your machine. If you changed the default port during PostgreSQL installation, update it accordingly
 
 5. **Run database migrations** (if applicable):
    ```bash
    # Check if there are migration scripts in package.json
-   npm run migrate
+   npx prisma migrate dev --name {migration_name}
    ```
 
 6. **Start the backend server:**
