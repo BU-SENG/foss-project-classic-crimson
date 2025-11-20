@@ -78,3 +78,12 @@ foss-project-classic-crimson/
 ├── my-app/           # Frontend application
 └── README.md         # Project documentation
 ```
+## Testing
+
+The backend uses Jest with ts-jest for unit and integration testing.
+   To run the full test suite:
+          npm test
+##  Troubleshooting Testing Configuration
+
+Module Resolution: The test configuration has been adjusted to handle path mapping and ensure tests can find modules correctly (e.g., import app from './app').
+ESM/CommonJS: The jest.config.js is configured to force ts-jest to output CommonJS modules, resolving the SyntaxError: Cannot use import statement outside a module error.
