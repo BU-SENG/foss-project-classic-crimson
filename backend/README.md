@@ -27,7 +27,7 @@ A RESTful backend for a Mood Board application, built with Express and powered b
 ---
 
 ## 📁 Project Structure
-
+```text
 backend/
 ├── prisma/
 │   ├── migrations/     # Database migration history (SQL files)
@@ -46,6 +46,7 @@ backend/
 ├── package.json        # Project metadata and dependencies
 ├── tsconfig.json       # TypeScript compiler configuration
 └── README.md           # Backend documentation
+```
 
 ## 📬 API Endpoints
 
