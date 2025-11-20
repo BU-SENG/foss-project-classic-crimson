@@ -12,6 +12,7 @@ import {
 import { useState } from "react";
 import { IoLockClosedOutline } from "react-icons/io5";
 import { Link, Outlet, useLocation } from "react-router-dom";
+import side from "../assets/image/side.jpg";
 
 const Login = () => {
   const location = useLocation();
@@ -22,7 +23,9 @@ const Login = () => {
   return (
     <div className="flex min-h-screen  justify-center items-center">
       <Flex className="*:min-h-[700px] *:min-w-[550px] ">
-        <div className="bg-primary w-[500px]"></div>
+        <div className="w-[550px]">
+          <img src={side} />
+        </div>
         <Outlet />
         {!path.includes("password") && (
           <div className="bg-white w-[550px]">
@@ -30,7 +33,7 @@ const Login = () => {
               <Heading
                 margin={10}
                 textTransform={"uppercase"}
-                fontSize={36}
+                fontSize={30}
                 fontWeight={"700"}
               >
                 Login

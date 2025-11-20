@@ -13,6 +13,8 @@ import { useState } from "react";
 import { IoLockClosedOutline } from "react-icons/io5";
 import { LuUserRound } from "react-icons/lu";
 import { Link } from "react-router-dom";
+import side from "../assets/image/side.jpg";
+
 
 export default function Register() {
   const [showPassword, setShowPassword] = useState(false);
@@ -25,7 +27,7 @@ export default function Register() {
             <Heading
               margin={10}
               textTransform={"uppercase"}
-              fontSize={36}
+              fontSize={30}
               fontWeight={"700"}
             >
               Create your account
@@ -123,7 +125,7 @@ export default function Register() {
             </Text>
           </Box>
         </div>
-        <div className="bg-primary h-10 "></div>
+        <div className="h-10 "><img src={side} /></div>
       </Flex>
     </div>
   );
