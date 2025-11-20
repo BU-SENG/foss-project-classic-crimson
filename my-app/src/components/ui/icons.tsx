@@ -1,25 +1,25 @@
 import {
-  BsArrowsFullscreen,
-  BsEyeFill,
-  BsEyeSlash,
-  BsHourglassTop,
-  BsLaptop,
+	BsArrowsFullscreen,
+	BsEyeFill,
+	BsEyeSlash,
+	BsHourglassTop,
+	BsLaptop,
 } from "react-icons/bs";
-import { FaRegBell, FaTools, FaTruck } from "react-icons/fa";
-import { FaPlus } from "react-icons/fa6";
-import { FcGoogle } from "react-icons/fc";
-import { IoMdSettings } from "react-icons/io";
+import {FaRegBell, FaTools, FaTruck} from "react-icons/fa";
+import {FaPlus} from "react-icons/fa6";
+import {FcGoogle} from "react-icons/fc";
+import {IoMdSettings} from "react-icons/io";
 import {
-  IoCaretBack,
-  IoChatbubbleEllipsesOutline,
-  IoLogOut,
-  IoPrint,
-  IoSearch,
+	IoCaretBack,
+	IoChatbubbleEllipsesOutline,
+	IoLogOut,
+	IoPrint,
+	IoSearch,
 } from "react-icons/io5";
-import { LuMail, LuUserRound } from "react-icons/lu";
-import { MdImportantDevices, MdOutlineAppRegistration } from "react-icons/md";
-import { RiDashboardFill } from "react-icons/ri";
-import { TbReport } from "react-icons/tb";
+import {LuMail, LuUserRound} from "react-icons/lu";
+import {MdImportantDevices, MdOutlineAppRegistration} from "react-icons/md";
+import {RiDashboardFill} from "react-icons/ri";
+import {TbReport} from "react-icons/tb";
 
 export const ChatBubble = IoChatbubbleEllipsesOutline;
 export const Bell = FaRegBell;
