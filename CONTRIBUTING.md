@@ -68,15 +68,17 @@ Follow these steps to set up the backend locally:
    PORT=5000
    ```
    
-   **Important:** Replace `{yourpassword}` with your actual PostgreSQL password.The PostgreSQL port in the DATABASE_URL (default 5432) must match the port configured on your machine. If you changed the default port during PostgreSQL installation, update it accordingly
+   **Important things to note:**
+   - Replace `{yourpassword}` with your actual PostgreSQL password.
+   - The PostgreSQL port in the DATABASE_URL (default 5432) must match the port configured on your machine. If you changed the default port during PostgreSQL installation, update it accordingly.
 
-5. **Run database migrations** (if applicable):
+6. **Run database migrations** (if applicable):
    ```bash
    # Check if there are migration scripts in package.json
    npx prisma migrate dev --name {migration_name}
    ```
 
-6. **Start the backend server:**
+7. **Start the backend server:**
    ```bash
    npm start
    ```
