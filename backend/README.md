@@ -28,16 +28,24 @@ A RESTful backend for a Mood Board application, built with Express and powered b
 
 ## 📁 Project Structure
 
-src/
-
-- ├── config/ // Database connection
-- ├── controllers/ // Route handlers
-- ├── middlewares/ // Auth Verification
-- ├── types/ //Type declarations
-- ├── routes/ // Express routers
-- ├── utils/ // Helper functions
-- ├── app.ts //Express App Initialization  
-- └── server.ts // Server Entry Point
+backend/
+├── prisma/
+│   ├── migrations/     # Database migration history (SQL files)
+│   └── schema.prisma   # Database schema and data model definitions
+├── src/
+│   ├── config/         # Database connection setup
+│   ├── controllers/    # Logic for handling API requests
+│   ├── middlewares/    # Request interceptors (e.g., Auth verification)
+│   ├── routes/         # API route definitions
+│   ├── types/          # TypeScript type declarations
+│   ├── utils/          # Shared helper functions
+│   ├── app.ts          # Express application setup
+│   ├── prisma.config.ts # Prisma Client instantiation and configuration
+│   └── server.ts       # Server entry point
+├── .gitignore          # Files ignored by Git
+├── package.json        # Project metadata and dependencies
+├── tsconfig.json       # TypeScript compiler configuration
+└── README.md           # Backend documentation
 
 ## 📬 API Endpoints
 
