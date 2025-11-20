@@ -6,6 +6,27 @@ export const createPost = async (req: Request, res: Response) => {
 	try {
 		const {caption, quote, imageUrl, moodCategory, tags} = req.body;
 
+		// This line of code is to reject bad data entered by users
+        
+        // This Checks if Mood Category exists
+        if (!moodCategory) {
+             return res.status(400).json({ error: "Mood category is required" });
+        }
+
+        // This ensures the post isn't empty
+        if (!caption && !quote && !imageUrl) {
+             return res.status(400).json({ 
+                error: "Post must contain at least a caption, quote, or image" 
+            });
+        }
+
+        // This validate Tags
+        if (tags && !Array.isArray(tags)) {
+             return res.status(400).json({ error: "Tags must be provided as a list" });
+        }
+
+        // The end 
+
 		const post = await prisma.post.create({
 			data: {
 				caption,
