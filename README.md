@@ -1,27 +1,42 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/tfYzIujW)
 
-# MOODBOARD 🎨
+# Backend Testing 🎨
 
 A platform for sharing quotes and expressing moods visually. Connect with others through shared feelings and self-expression.
 
-## FEATURES 📲
+## Prerequisites
 
-- Sign up / Login
-- Create and share mood posts with quotes
-- Visual mood expression
-- Connect with others through shared feelings
-- Personalized mood boards
+Node.js (LTS version recommended)
 
-## TOOLS USED 🛠️
+A running database instance (e.g., PostgreSQL, MySQL, SQLite) configured in prisma/schema.prisma.
 
-You need to have all these installed for everything to work fine:
+## Setup and Installation🛠️
+Install Dependencies:
 
-- **Node.js** - JavaScript run-time environment
-- **PostgreSQL** - Structured Database
-- **VSCode** - Integrated Development Environment
-- **PgAdmin** - To visualize the PostgreSQL database
+npm install
 
-## HOW TO USE THIS REPO 🚀
+
+Configure Environment:
+Ensure you have a .env file in the root of the backend directory containing your DATABASE_URL and any other required secrets.
+
+Generate Prisma Client:
+This command reads your prisma/schema.prisma file and generates the TypeScript client required to interact with your database. Always run this after installing dependencies or making changes to the schema.
+
+npx prisma generate
+
+## Testing 🚀
+The backend uses Jest with ts-jest for unit and integration testing.
+
+To run the full test suite:
+
+npm test
+
+
+⚙️ Troubleshooting Testing Configuration
+
+Module Resolution: The test configuration has been adjusted to handle path mapping and ensure tests can find modules correctly (e.g., import app from './app').
+
+ESM/CommonJS: The jest.config.js is configured to force ts-jest to output CommonJS modules, resolving the SyntaxError: Cannot use import statement outside a module error.
 
 1. **Clone the project.** Open your terminal and use the following command:
    ```bash
@@ -51,16 +66,24 @@ You need to have all these installed for everything to work fine:
    npm install
    npm start
    ```
+   
 
-6. **Start the frontend server:**
-   - Open a new terminal in the same project directory and navigate to the frontend folder
-   ```bash
-   cd my-app
-   npm install
-   npm run dev
-   ```
+A list of technologies used in this backend service:
 
-7. **View the application** in the browser with the link provided in the terminal
+#nodejs
+
+#express
+
+#typescript
+
+#prisma
+
+#orm
+
+#jest
+
+#postgresql
+
 
 ## THINGS TO NOTE 📝
 
